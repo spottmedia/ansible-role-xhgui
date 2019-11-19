@@ -1,3 +1,10 @@
+# TODO:
+
+* not all dependencies get installed automatically. Can do it by:
+    `/usr/local/composer/vendor/perftools/xhgui# php -f install.php`
+    
+  So need to automate this task
+
 # Ansible Role: xhgui
 
 Installs [xhgui](https://github.com/perftools/xhgui): A graphical interface for XHProf data built on MongoDB.
