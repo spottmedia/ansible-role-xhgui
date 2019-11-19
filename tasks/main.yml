@@ -1,6 +1,6 @@
 ---
 - name: Install XHGui
-  shell: export COMPOSER_HOME={{ xhgui_composer_path }} && composer global require 'perftools/xhgui=dev-master' creates={{ xhgui_composer_path }}/vendor/perftools/xhgui/composer.json
+  shell: export COMPOSER_HOME={{ xhgui_composer_path }} && composer global require 'perftools/xhgui=0.8.1' creates={{ xhgui_composer_path }}/vendor/perftools/xhgui/composer.json
 
 - name: Set XHGui permisssions
   file: path={{ xhgui_composer_path }}/vendor/perftools/xhgui/cache group=www-data mode=775
