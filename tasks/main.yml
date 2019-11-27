@@ -12,5 +12,6 @@
   script: xhgui_indexes.sh --some-arguments 1234 creates=/root/indexed_xhgui.txt
 
 - name: Invoke the installations script for xhgui
-  shell: "php -f install.php"
-  chdir: "{{ xhgui_composer_path }}/vendor/perftools/xhgui"
+  shell: 
+    cmd: "php -f install.php"
+    chdir: "{{ xhgui_composer_path }}/vendor/perftools/xhgui"
