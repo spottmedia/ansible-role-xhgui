@@ -12,4 +12,4 @@
   script: xhgui_indexes.sh --some-arguments 1234 creates=/root/indexed_xhgui.txt
 
 - name: Invoke the installations script for xhgui
-  shell: {{ xhgui_composer_path }}/vendor/perftools/xhgui/install.php
+  shell: "{{ xhgui_composer_path }}/vendor/perftools/xhgui/install.php"
