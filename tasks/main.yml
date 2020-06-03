@@ -3,7 +3,8 @@
 - name: Install required php libs.
   apt:
     pkg:
-      - php-mongodb      
+      - php-mongodb
+      - php-xml
     state: installed
     update-cache: true
     install_recommends: true
